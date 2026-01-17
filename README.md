@@ -2,7 +2,9 @@
 # Bộ câu hỏi phân tích dữ liệu học sinh
 
 Mục tiêu: Chuẩn hóa 20 câu hỏi phân tích để đưa lên GitHub. Mỗi câu được viết rõ ràng, ngắn gọn và dễ thực hiện trên tập dữ liệu có các biến chính: School Type, Gender, Overall Score, Math Score, Science Score, English Score, Final Grade, Study Hours, Attendance, Study Method, Age, Travel Time, Internet Access, Extra Activities, v.v.
+<img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=kaggle&logoColor=white" height="30" />
 Link bộ dataset: "https://www.kaggle.com/datasets/kundanbedmutha/student-performance-dataset"
+<img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=colab&logoColor=white" height="30" />
 
 ## Danh sách biến chính (ví dụ)
 - Loại trường — School Type
