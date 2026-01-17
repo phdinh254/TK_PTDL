@@ -44,3 +44,5 @@ Link bộ dataset: "https://www.kaggle.com/datasets/kundanbedmutha/student-perfo
 18. Sử dụng biểu đồ nhiệt (heatmap) để trực quan hóa vùng dữ liệu có mật độ học sinh đạt Điểm A cao nhất theo hai trục: Chuyên cần (Attendance) và Giờ học (Study Hours).
 19. So sánh hồ sơ đặc trưng giữa nhóm Thủ khoa (highest Overall Score) và nhóm Điểm thấp nhất (lowest Overall Score): yếu tố có khác biệt lớn nhất là gì?
 20. Xây dựng và đánh giá mô hình Hồi quy tuyến tính (Linear Regression) để dự đoán Điểm tổng kết (Overall Score) dựa trên các biến có tương quan mạnh nhất (ví dụ: Attendance, Study Hours, component scores). Nêu các bước chọn biến, đánh giá hiệu năng và kiểm định giả thiết của mô hình.
+
+Link Google Collab: "https://www.kaggle.com/datasets/kundanbedmutha/student-performance-dataset"
