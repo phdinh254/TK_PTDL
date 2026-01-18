@@ -2,9 +2,10 @@
 # Bộ câu hỏi phân tích dữ liệu học sinh
 
 Mục tiêu: Chuẩn hóa 20 câu hỏi phân tích để đưa lên GitHub. Mỗi câu được viết rõ ràng, ngắn gọn và dễ thực hiện trên tập dữ liệu có các biến chính: School Type, Gender, Overall Score, Math Score, Science Score, English Score, Final Grade, Study Hours, Attendance, Study Method, Age, Travel Time, Internet Access, Extra Activities, v.v.
-<img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=kaggle&logoColor=white" height="30" />
+<img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white" height="30" /> <br/>
 Link bộ dataset: "https://www.kaggle.com/datasets/kundanbedmutha/student-performance-dataset"
-<img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=colab&logoColor=white" height="30" />
+<img src="https://img.shields.io/badge/Google_Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white" height="30" /> <br/>
+Link Google Collab: "https://www.kaggle.com/datasets/kundanbedmutha/student-performance-dataset"
 
 ## Danh sách biến chính (ví dụ)
 - Loại trường — School Type
@@ -46,5 +47,3 @@ Link bộ dataset: "https://www.kaggle.com/datasets/kundanbedmutha/student-perfo
 18. Sử dụng biểu đồ nhiệt (heatmap) để trực quan hóa vùng dữ liệu có mật độ học sinh đạt Điểm A cao nhất theo hai trục: Chuyên cần (Attendance) và Giờ học (Study Hours).
 19. So sánh hồ sơ đặc trưng giữa nhóm Thủ khoa (highest Overall Score) và nhóm Điểm thấp nhất (lowest Overall Score): yếu tố có khác biệt lớn nhất là gì?
 20. Xây dựng và đánh giá mô hình Hồi quy tuyến tính (Linear Regression) để dự đoán Điểm tổng kết (Overall Score) dựa trên các biến có tương quan mạnh nhất (ví dụ: Attendance, Study Hours, component scores). Nêu các bước chọn biến, đánh giá hiệu năng và kiểm định giả thiết của mô hình.
-
-Link Google Collab: "https://www.kaggle.com/datasets/kundanbedmutha/student-performance-dataset"
