@@ -1,49 +1,90 @@
-# TK_PTDL
-# Bộ câu hỏi phân tích dữ liệu học sinh
+# 🎓 Student Performance Analysis Project
 
-Mục tiêu: Chuẩn hóa 20 câu hỏi phân tích để đưa lên GitHub. Mỗi câu được viết rõ ràng, ngắn gọn và dễ thực hiện trên tập dữ liệu có các biến chính: School Type, Gender, Overall Score, Math Score, Science Score, English Score, Final Grade, Study Hours, Attendance, Study Method, Age, Travel Time, Internet Access, Extra Activities, v.v.
-<img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white" height="30" /> <br/>
-Link bộ dataset: "https://www.kaggle.com/datasets/kundanbedmutha/student-performance-dataset"
-<img src="https://img.shields.io/badge/Google_Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white" height="30" /> <br/>
-Link Google Collab: "https://www.kaggle.com/datasets/kundanbedmutha/student-performance-dataset"
+> **Mục tiêu:** Phân tích toàn diện các yếu tố ảnh hưởng đến kết quả học tập của học sinh, từ đó đề xuất các giải pháp tối ưu hóa hiệu quả giáo dục dựa trên dữ liệu.
 
-## Danh sách biến chính (ví dụ)
-- Loại trường — School Type
-- Giới tính — Gender
-- Điểm tổng kết — Overall Score
-- Điểm Toán — Math Score
-- Điểm Khoa học — Science Score
-- Điểm Tiếng Anh — English Score
-- Xếp loại học lực — Final Grade
-- Giờ học / Thời gian học — Study Hours
-- Chuyên cần — Attendance
-- Phương pháp học — Study Method
-- Tuổi — Age
-- Thời gian đi học — Travel Time
-- Có Internet — Internet Access
-- Tham gia ngoại khóa — Extra Activities
+<div align="center">
+
+<a href="https://www.kaggle.com/datasets/kundanbedmutha/student-performance-dataset">
+  <img src="https://img.shields.io/badge/Dataset-Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white" alt="Kaggle"/>
+</a>
+&nbsp;
+<a href="LINK_GOOGLE_COLAB_CUA_BAN">
+  <img src="https://img.shields.io/badge/Notebook-Google_Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white" alt="Google Colab"/>
+</a>
+
+</div>
 
 ---
 
-### Câu hỏi phân tích (chuẩn hóa)
+## 📊 Data Dictionary (Từ điển dữ liệu)
 
-1. Cơ cấu học sinh phân bố như thế nào theo hai yếu tố Loại trường (School Type) và Giới tính (Gender)?
-2. Phổ phân phối của Điểm tổng kết (Overall Score) có phù hợp với phân phối chuẩn hay không (kiểm tra bằng biểu đồ và kiểm định)?
-3. So sánh điểm trung bình giữa ba môn Toán (Math Score), Khoa học (Science Score) và Tiếng Anh (English Score) để xác định môn có phổ điểm thấp nhất.
-4. Tỉ lệ phân bổ của các mức xếp loại học lực (Final Grade) trong toàn trường hiện như thế nào?
-5. Phân tích mối tương quan giữa Thời gian học (Study Hours) và Điểm tổng kết (Overall Score): hướng, cường độ và ý nghĩa thống kê.
-6. Chuyên cần (Attendance) ảnh hưởng cụ thể như thế nào tới phân bố của Điểm tổng kết (Overall Score)?
-7. Đánh giá hiệu quả của các Phương pháp học (Study Method) đối với từng môn: Toán, Khoa học và Tiếng Anh (so sánh trung bình và phân bố).
-8. Xây dựng chỉ số Efficiency = Overall Score / Study Hours. Phân tích chỉ số này theo độ tuổi (Age) để xác định nhóm tuổi có hiệu quả tiếp thu tốt nhất (điểm cao nhưng thời gian học thấp).
-9. So sánh độ lệch chuẩn (standard deviation) của điểm số giữa Nam và Nữ để xác định giới tính có kết quả học tập ổn định hơn.
-10. Ma trận tương quan giữa các biến định lượng (Study Hours, Attendance, test component scores, Overall Score) cho thấy những cặp biến nào có mối liên hệ mạnh nhất?
-11. Xu hướng thay đổi của Điểm tổng kết (Overall Score) khi mức trình độ học vấn của cha mẹ tăng dần theo thứ tự: No Formal < High School < Diploma < Graduate < Post Graduate < PhD.
-12. Với nhóm học sinh đi học xa (Travel Time = ">60 min"), việc có kết nối Internet (Internet Access = Yes) có giúp cải thiện Điểm tổng kết (Overall Score) so với nhóm không có Internet không?
-13. Nhóm học sinh tham gia hoạt động ngoại khóa (Extra Activities = Yes) có điểm trung bình Overall Score khác (thấp/hay cao) so với nhóm không tham gia không?
-14. So sánh phân bố điểm Toán (Math Score) giữa hai loại trường: Trường Công và Trường Tư.
-15. Với cùng một Phương pháp học (Study Method), so sánh hiệu quả điểm môn Khoa học (Science Score) giữa học sinh Nam và Nữ.
-16. So sánh đặc điểm (Study Hours, Attendance) của nhóm top 1% học sinh xuất sắc nhất giữa Trường Công và Trường Tư.
-17. Phân tích nhóm "Hiệu quả thấp": những học sinh thuộc top 25% về thời gian học (Study Hours cao) nhưng thuộc bottom 25% về Overall Score — nguyên nhân chủ yếu là do phương pháp học hay do chuyên cần?
-18. Sử dụng biểu đồ nhiệt (heatmap) để trực quan hóa vùng dữ liệu có mật độ học sinh đạt Điểm A cao nhất theo hai trục: Chuyên cần (Attendance) và Giờ học (Study Hours).
-19. So sánh hồ sơ đặc trưng giữa nhóm Thủ khoa (highest Overall Score) và nhóm Điểm thấp nhất (lowest Overall Score): yếu tố có khác biệt lớn nhất là gì?
-20. Xây dựng và đánh giá mô hình Hồi quy tuyến tính (Linear Regression) để dự đoán Điểm tổng kết (Overall Score) dựa trên các biến có tương quan mạnh nhất (ví dụ: Attendance, Study Hours, component scores). Nêu các bước chọn biến, đánh giá hiệu năng và kiểm định giả thiết của mô hình.
+Tập dữ liệu bao gồm các biến số quan trọng xoay quanh môi trường học tập và sinh hoạt của học sinh.
+
+| Tên biến (Variable) | Ý nghĩa (Description) | Loại biến (Type) |
+| :--- | :--- | :--- |
+| **School Type** | Loại hình trường học (Công/Tư) | Categorical |
+| **Gender** | Giới tính học sinh | Categorical |
+| **Overall Score** | Điểm tổng kết trung bình | Numerical |
+| **Math / Science / English Score** | Điểm thành phần các môn | Numerical |
+| **Final Grade** | Xếp loại học lực cuối kỳ | Categorical (Ordinal) |
+| **Study Hours** | Tổng giờ học tự học | Numerical |
+| **Attendance** | Tỉ lệ chuyên cần | Numerical (%) |
+| **Study Method** | Phương pháp học tập chính | Categorical |
+| **Parent Education** | Trình độ học vấn phụ huynh | Categorical (Ordinal) |
+| **Travel Time** | Thời gian di chuyển đến trường | Numerical |
+| **Internet Access** | Có kết nối Internet hay không | Binary (Yes/No) |
+| **Extra Activities** | Tham gia hoạt động ngoại khóa | Binary (Yes/No) |
+
+---
+
+## 🚀 Analytical Questions (Bộ câu hỏi phân tích)
+
+Dự án tập trung giải quyết 20 câu hỏi trọng tâm, được chia thành 4 giai đoạn phân tích chính:
+
+### I. Exploratory Data Analysis (EDA) & Distribution
+*Khám phá cấu trúc dữ liệu và các phân phối cơ bản.*
+
+1. **Demographic Distribution:** Cơ cấu học sinh phân bố như thế nào theo hai yếu tố `School Type` và `Gender`?
+2. **Normality Test:** Phổ phân phối của `Overall Score` có tuân theo phân phối chuẩn (Normal Distribution) không? (Kiểm chứng bằng Histogram & Shapiro-Wilk test).
+3. **Subject Comparison:** So sánh phân phối điểm giữa `Math`, `Science` và `English`. Môn nào có phổ điểm thấp nhất/biến động nhất?
+4. **Grade Proportion:** Tỉ lệ phân bổ các mức `Final Grade` (A, B, C...) trong toàn trường hiện ra sao?
+5. **Dispersion by Gender:** So sánh độ lệch chuẩn (Standard Deviation) của điểm số giữa Nam và Nữ để đánh giá tính ổn định trong kết quả học tập.
+
+### II. Correlation & Factors Analysis
+*Xác định các mối quan hệ tuyến tính và nhân quả giữa các biến.*
+
+6. **Time vs. Performance:** Phân tích mối tương quan (Correlation) giữa `Study Hours` và `Overall Score`. (Hướng, cường độ và ý nghĩa thống kê Pearson/Spearman).
+7. **Impact of Attendance:** `Attendance` ảnh hưởng cụ thể như thế nào tới phân bố `Overall Score`? (Sử dụng Scatter plot hoặc Regression line).
+8. **Study Method Efficiency:** Đánh giá hiệu quả của từng `Study Method` đối với từng môn học riêng biệt (Toán, Khoa học, Anh văn).
+9. **Correlation Matrix:** Xây dựng ma trận tương quan (Heatmap) giữa các biến định lượng để tìm ra "Feature" ảnh hưởng mạnh nhất đến kết quả học tập.
+10. **Parental Influence:** Xu hướng thay đổi của `Overall Score` khi trình độ học vấn cha mẹ tăng dần (từ *No Formal* đến *PhD*)?
+
+### III. Segmentation & Comparative Analysis
+*So sánh sự khác biệt giữa các nhóm đối tượng đặc thù.*
+
+11. **Digital Gap:** Với nhóm đi học xa (`Travel Time > 60 min`), việc có `Internet Access` có giúp cải thiện điểm số so với nhóm không có không?
+12. **Extracurricular Balance:** Nhóm tham gia `Extra Activities` có điểm trung bình cao hơn hay thấp hơn nhóm không tham gia? (Kiểm định t-test).
+13. **School Environment:** So sánh phân bố `Math Score` giữa Trường Công (Public) và Trường Tư (Private).
+14. **Gender & Science:** Với cùng một `Study Method`, hiệu quả điểm `Science Score` giữa Nam và Nữ có sự khác biệt thống kê không?
+15. **Elite Profiling:** So sánh đặc điểm hành vi (`Study Hours`, `Attendance`) của nhóm **Top 1%** học sinh xuất sắc nhất giữa hai loại hình trường.
+
+### IV. Advanced Insights & Modeling
+*Phân tích chuyên sâu, phát hiện bất thường và dự báo.*
+
+16. **Feature Engineering (Efficiency Index):** Tạo chỉ số `Efficiency = Overall Score / Study Hours`. Nhóm độ tuổi (`Age`) nào có hiệu suất học tập tốt nhất?
+17. **Anomaly Detection (Low Efficiency):** Phân tích nhóm "Nỗ lực ảo" (Top 25% Study Hours nhưng Bottom 25% Score). Nguyên nhân do phương pháp học sai hay chuyên cần thấp?
+18. **Density Analysis:** Sử dụng Heatmap 2D để trực quan hóa vùng mật độ học sinh đạt **Điểm A** theo hai trục: `Attendance` vs `Study Hours`.
+19. **Profile Contrast:** So sánh hồ sơ đặc trưng (Radar Chart) giữa nhóm Thủ khoa và nhóm Điểm thấp nhất. Yếu tố nào tạo ra khoảng cách lớn nhất?
+20. **Predictive Modeling:** Xây dựng mô hình **Linear Regression** dự đoán `Overall Score`.
+    * *Yêu cầu:* Feature Selection, đánh giá mô hình (R-squared, RMSE) và kiểm tra đa cộng tuyến.
+
+---
+
+### 🛠 Tech Stack
+* **Language:** Python
+* **Libraries:** Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, SciPy.
+
+---
+<div align="center">
+  <i>Project by Trần Phú Dinh, Trần Hoàng Long, Khưu Gia Bảo</i>
+</div>
