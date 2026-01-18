@@ -86,5 +86,5 @@ Dự án tập trung giải quyết 20 câu hỏi trọng tâm, được chia th
 
 ---
 <div align="center">
-  <i>Project by Trần Phú Dinh, "@trhlow", "@baokhuu965-alt"</i>
+  <i>Project by Trần Phú Dinh, <a href="trhlow">, <a href="@baokhuu965-alt"></i>
 </div>
